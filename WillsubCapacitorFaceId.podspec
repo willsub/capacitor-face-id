@@ -1,6 +1,6 @@
 
   Pod::Spec.new do |s|
-    s.name = 'CapacitorFaceId'
+    s.name = 'WillsubCapacitorFaceId'
     s.version = '0.0.1'
     s.summary = 'Foo'
     s.license = 'MIT'
