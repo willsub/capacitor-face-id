@@ -1,3 +1,12 @@
+## [2.1.2](https://github.com/willsub/capacitor-face-id/compare/v2.1.1...v2.1.2) (2020-07-02)
+
+
+### Bug Fixes
+
+* podspec name ([aaf7add](https://github.com/willsub/capacitor-face-id/commit/aaf7add4a66cedf9d38bf4d6d461211c3d483fac))
+
+
+
 ## [2.1.1](https://github.com/willsub/capacitor-face-id/compare/v2.0.1...v2.1.1) (2020-07-02)
 
 
