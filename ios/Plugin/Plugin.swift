@@ -3,8 +3,8 @@ import Capacitor
 import LocalAuthentication
 
 let kNoneType = "None"
-let kTouchIDType = "TouchId"
-let kFaceIDType = "FaceId"
+let kTouchIDType = "Touch ID"
+let kFaceIDType = "Face ID"
 
 let errorCodeMap: [LAError.Code: String] = [
   .appCancel: "appCancel",
