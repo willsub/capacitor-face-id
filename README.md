@@ -1,16 +1,23 @@
 # Capacitor Face ID Plugin
 
-[![npm version](https://badge.fury.io/js/capacitor-face-id.svg)](https://badge.fury.io/js/capacitor-face-id)
-![Build](https://github.com/danielsogl/capacitor-face-id/workflows/Build/badge.svg)
+[![npm version](https://badge.fury.io/js/%40willsub-npm%2Fcapacitor-face-id.svg)](https://badge.fury.io/js/%40willsub-npm%2Fcapacitor-face-id)
 
 Allow users to authenticate with Face ID or Touch ID on iOS devices.
 
-![Logo](https://www.intego.com/mac-security-blog/wp-content/uploads/2017/10/Touch-ID-vs-Face-ID.png)
+<img src="https://cdn4.iconfinder.com/data/icons/apple-touch-id/512/Touch_ID-512.png" width="50" alt="Touch ID" />
+<img src="https://cdn1.iconfinder.com/data/icons/ios-11-glyphs/30/face_ID-512.png" width="50" alt="Face ID" />
+
+#### NOTE
+
+If you are switching from [capacitor-face-id](https://github.com/danielsogl/capacitor-face-id) to this plugin,
+please note that some breaking changes have been made to the API.
 
 ## Installation
 
 ```sh
-npm install capacitor-face-id
+pnpm install @willsub-npm/capacitor-face-id
+npm install @willsub-npm/capacitor-face-id
+yarn add @willsub-npm/capacitor-face-id
 ```
 
 ## Setup
