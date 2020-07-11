@@ -38,7 +38,7 @@
   "files": [
     "dist/",
     "ios/",
-    "WillsubCapacitorFaceId.podspec"
+    "WillsubNpmCapacitorFaceId.podspec"
   ],
   "keywords": [
     "capacitor",
