@@ -4,13 +4,14 @@ declare module '@capacitor/core' {
         FaceId: FaceIdPlugin;
     }
 }
+/** The values returned by isAvailable() */
 export declare enum FaceIdPluginBiometryType {
     none = "None",
     touchID = "Touch ID",
     faceID = "Face ID"
 }
 export interface FaceIdPluginIsAvailableResult {
-    /**  Returns available biometry type or 'None' if unavailable */
+    /** Returns available biometry type or 'None' if unavailable */
     value: FaceIdPluginBiometryType;
 }
 export interface FaceIdPluginAuthOptions {
@@ -45,7 +46,7 @@ export interface FaceIdPluginAuthOptions {
  * See https://developer.apple.com/documentation/localauthentication/laerror
  * for a description of each error code.
  */
-export declare enum FaceIDPluginErrorCode {
+export declare enum FaceIdPluginErrorCode {
     appCancel = "appCancel",
     authenticationFailed = "authenticationFailed",
     invalidContext = "invalidContext",
@@ -58,8 +59,8 @@ export declare enum FaceIDPluginErrorCode {
     biometryNotAvailable = "biometryNotAvailable",
     biometryNotEnrolled = "biometryNotEnrolled"
 }
-export interface FaceIDPluginResultError extends PluginResultError {
-    code: FaceIDPluginErrorCode;
+export interface FaceIdPluginResultError extends PluginResultError {
+    code: FaceIdPluginErrorCode;
 }
 export interface FaceIdPlugin {
     /**

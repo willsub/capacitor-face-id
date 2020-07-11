@@ -1,3 +1,4 @@
+/** The values returned by isAvailable() */
 export var FaceIdPluginBiometryType;
 (function (FaceIdPluginBiometryType) {
     FaceIdPluginBiometryType["none"] = "None";
@@ -12,18 +13,18 @@ export var FaceIdPluginBiometryType;
  * See https://developer.apple.com/documentation/localauthentication/laerror
  * for a description of each error code.
  */
-export var FaceIDPluginErrorCode;
-(function (FaceIDPluginErrorCode) {
-    FaceIDPluginErrorCode["appCancel"] = "appCancel";
-    FaceIDPluginErrorCode["authenticationFailed"] = "authenticationFailed";
-    FaceIDPluginErrorCode["invalidContext"] = "invalidContext";
-    FaceIDPluginErrorCode["notInteractive"] = "notInteractive";
-    FaceIDPluginErrorCode["passcodeNotSet"] = "passcodeNotSet";
-    FaceIDPluginErrorCode["systemCancel"] = "systemCancel";
-    FaceIDPluginErrorCode["userCancel"] = "userCancel";
-    FaceIDPluginErrorCode["userFallback"] = "userFallback";
-    FaceIDPluginErrorCode["biometryLockout"] = "biometryLockout";
-    FaceIDPluginErrorCode["biometryNotAvailable"] = "biometryNotAvailable";
-    FaceIDPluginErrorCode["biometryNotEnrolled"] = "biometryNotEnrolled";
-})(FaceIDPluginErrorCode || (FaceIDPluginErrorCode = {}));
+export var FaceIdPluginErrorCode;
+(function (FaceIdPluginErrorCode) {
+    FaceIdPluginErrorCode["appCancel"] = "appCancel";
+    FaceIdPluginErrorCode["authenticationFailed"] = "authenticationFailed";
+    FaceIdPluginErrorCode["invalidContext"] = "invalidContext";
+    FaceIdPluginErrorCode["notInteractive"] = "notInteractive";
+    FaceIdPluginErrorCode["passcodeNotSet"] = "passcodeNotSet";
+    FaceIdPluginErrorCode["systemCancel"] = "systemCancel";
+    FaceIdPluginErrorCode["userCancel"] = "userCancel";
+    FaceIdPluginErrorCode["userFallback"] = "userFallback";
+    FaceIdPluginErrorCode["biometryLockout"] = "biometryLockout";
+    FaceIdPluginErrorCode["biometryNotAvailable"] = "biometryNotAvailable";
+    FaceIdPluginErrorCode["biometryNotEnrolled"] = "biometryNotEnrolled";
+})(FaceIdPluginErrorCode || (FaceIdPluginErrorCode = {}));
 //# sourceMappingURL=definitions.js.map

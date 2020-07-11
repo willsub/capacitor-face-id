@@ -31,8 +31,8 @@ Access to the app requires authentication.
 ## Usage
 
 ```ts
-import { Plugins, PluginResultError } from '@capacitor/core';
-import { FaceIDPluginErrorCode } from 'capacitor-face-id';
+import { Plugins } from '@capacitor/core';
+import { FaceIdPluginBiometryType, FaceIdPluginErrorCode } from '@willsub-npm/capacitor-face-id';
 
 const { FaceId } = Plugins;
 const appName = 'My Great App';
@@ -41,22 +41,22 @@ async function biometricAuth() {
   const authCheck = await FaceId.isAvailable();
   const authType = authCheck.value;
 
-  if (authType !== 'None') {
+  if (authType !== FaceIdPluginBiometryType.none) {
     try {
       await FaceId.auth({
         reason: 'Please authenticate',
-        fallbackTitle: ''
+        fallbackTitle: '' // Don't show a fallback button
       });
     } catch (error) {
       let message;
   
       switch (error.code) {
         // This happens if the user disables biometric access in Settings
-        case FaceIDPluginErrorCode.biometryNotAvailable:
+        case FaceIdPluginErrorCode.biometryNotAvailable:
           message = `In order to use ${authType}, you must enable it in Settings > ${appName}.`;
           break;
   
-        case FaceIDPluginErrorCode.biometryNotEnrolled:
+        case FaceIdPluginErrorCode.biometryNotEnrolled:
           message = `In order to use ${authType}, you must set it up in the Settings app.`;
           break;
   
