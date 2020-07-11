@@ -1,3 +1,9 @@
+export var FaceIdPluginBiometryType;
+(function (FaceIdPluginBiometryType) {
+    FaceIdPluginBiometryType["none"] = "None";
+    FaceIdPluginBiometryType["touchID"] = "Touch ID";
+    FaceIdPluginBiometryType["faceID"] = "Face ID";
+})(FaceIdPluginBiometryType || (FaceIdPluginBiometryType = {}));
 /**
  * If the auth() function throws an exception, the error object
  * contains a .code property which will contain one of these strings,
